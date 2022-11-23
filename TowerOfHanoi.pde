@@ -2,7 +2,7 @@ public final float countOfBlocks = 5;
 
 class TowerOfHanoi{
   Rod[] rod;
-  Block[] block;
+  Blocks[] block;
   
   void setup(){
   rod = new Rod[3];
