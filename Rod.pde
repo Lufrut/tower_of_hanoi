@@ -5,7 +5,7 @@ class Rod{
     float h;
     int strokeWeight;
     color rodColor;
-    ArrayList<Block> blocks = new ArrayList<Block>();
+    ArrayList<Blocks> blocks = new ArrayList<Blocks>();
     
     Rod(float _x, float _y, float _h, int _strokeWeight, color _rodColor){
       x = _x;
@@ -15,7 +15,7 @@ class Rod{
       rodColor = _rodColor;
     }
     
-    void addBlock(Block block){
+    void addBlock(Blocks block){
       blocks.add(block);
     }
     
@@ -23,7 +23,7 @@ class Rod{
       blocks.remove(index);
     }
     
-    Block getBlock(int index){
+    Blocks getBlock(int index){
       return blocks.get(index);
     }
     
@@ -33,7 +33,7 @@ class Rod{
       line(x,y,x,y-1.25*h);
       line(x-h/2,y,x+h/2,y);
       
-      for (Block item : blocks){
+      for (Blocks item : blocks){
       item.draw();
       }
     }

@@ -28,7 +28,7 @@ class TowerOfHanoi{
         w = w - w/(countOfBlocks-i+3);
         x = rod[0].x - w/2;
         rod[0].addBlock(
-        new Block(x,y,w,h,blockColor)
+        new Blocks(x,y,w,h,blockColor)
         );
       }
       

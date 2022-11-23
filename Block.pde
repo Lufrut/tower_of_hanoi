@@ -1,10 +1,10 @@
-class Block{
+class Blocks{
   float x,y;
   float w,h;
   
   color blockColor;
   
-  Block(float _x, float _y, float _w, float _h, color _blockColor){
+  Blocks(float _x, float _y, float _w, float _h, color _blockColor){
     x = _x;
     y = _y;
     w = _w;
