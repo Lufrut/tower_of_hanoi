@@ -12,8 +12,17 @@ class Blocks{
     blockColor = _blockColor;
   
   }
-  
-  void draw(){
+  void move(float _x, float _y){
+    x = _x;
+    y = _y;
+  }
+  boolean checkMouseX(){
+      return (mouseX < (x + w) & (mouseX > (x - w)));
+    }
+  boolean checkMouseY(){
+      return (mouseY > (y - h) & (mouseY < y + h));
+    }
+  void display(){
     stroke(0);
     strokeWeight(0);
     fill(blockColor);

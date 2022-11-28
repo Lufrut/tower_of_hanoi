@@ -4,6 +4,13 @@ void setup(){
   game.setup();
 }
 
+
 void draw(){
-  game.draw();
+  game.display();
+}
+void mouseDragged(){
+  game.mouseDragged();
+}
+void mouseReleased(){
+  game.mouseReleased();
 }
